@@ -1,0 +1,158 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body{
+    background: #0f172a; 
+    color: white;
+   /* padding: 14px; */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    font-family: sans-serif;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px;
+
+}
+
+nav, section {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+header section img{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px solid salmon;
+
+}
+
+.whitelink{
+    color: lightgray;
+
+}
+.greylink{
+    color: white;
+}
+a {
+    text-decoration: unset;
+    font-size: 0.8em;
+}
+a:hover{
+    text-decoration: underline;
+}
+main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 0px 14px;
+}
+.headertext{
+    font-size: 4em;
+    font-family: 'Times New Roman', Times, serif;
+}
+.searchbar{
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    gap: 14px;
+    border: 1px solid grey;
+    padding: 8px;
+    border-radius: 24px;
+
+
+}
+.searchbar:hover{
+    border-color: transparent;
+    background: darkgrey;
+
+
+}
+input{
+    background: transparent;
+    outline: none;
+    border: unset;
+    color: white;
+    flex: 1;
+
+
+    
+}
+.iconbuttondiv{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+.iconbutton{
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+.searchbuttons{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+
+}
+.searchbuttons button{
+    padding: 10px 14px;
+    border-radius: 4px;
+    background: #334155;
+    color: white;
+    border: 1px solid transparent;
+    cursor: pointer;
+
+}
+.searchbuttons button:hover{
+    border: 1px solid darkgray;
+}
+.Language{
+    font-size: 0.9em
+}
+.Language span{
+    color:rgb(138, 138, 237) ;
+    underline;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+
+
+}
+footer > section{
+    padding: 14px
+
+    
+}
+footer>section:last-child{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid darkgray;
+    
+}
+.bottomlinks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+.bottomlinks a{
+    cursor: pointer;
+}
+
+@media (min-width: 400px){
+    .bottomlinks{
+        flex-direction: row;
+    }
+}
